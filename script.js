@@ -16,3 +16,35 @@ if (nilai >= 90 && nilai <=100) {
 for (i = 1; i >= 10; i++) {
     console.log(i);
 }
+
+function handleGetFormData(event){
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const city = document.getElementById('city').value;
+    const email = document.getElementById('email').value;
+    const zipCode = document.getElementById('zip-code').value;
+    const status = document.getElementById('status').checked;
+
+    if (!name || !city || email || !zipCode || !status) {
+        document.getElementById("warning").innerHTML = "input rewuired";
+    }
+
+    const user = {
+        name,
+        city,
+        email,
+        zipCode,
+        status,
+    }
+
+    localStorage.setItem("dataUser", JSON.stringify (user));
+
+    return {
+        name,
+        city,
+        email,
+        zipCode,
+        status,
+    };
+}
