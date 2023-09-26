@@ -1,0 +1,62 @@
+.menu {
+    float: right;
+    font-family: 'Poppins';
+}
+
+#menu-data{
+    padding: 20px 170px 50px 130px;
+    background: #F9FBFD;
+}
+
+form {
+    justify-content: center;
+    text-align: center;
+}
+
+.profil {
+    display: inline-block;
+}
+
+label {
+    text-align: left;
+    margin: 5px;
+    display: block;
+}
+
+input {
+    margin:  5px;
+    display: block;
+    padding: 15px 100px 15px 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.pernyataan {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+
+#submit-form {
+    font-family: 'Open Sans';
+    background: #FFCB40;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px 15px 20px;
+    color: #B05F00;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+}
+
+#submit-form:hover {
+    background: #B05F00;
+    color: #FFCB40;
+}
